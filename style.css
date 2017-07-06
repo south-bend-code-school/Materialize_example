@@ -1,0 +1,108 @@
+body {
+  background-color: LightBlue;
+  margin: 0 auto;
+     /*If you're having any weird margin or padding issues on your site, try adding margin: 0 auto; to the body of your page*/
+}
+
+#logo {
+  /*To slightly move the logo in my navbar to the right*/
+  padding-left: 1%;
+}
+
+#header {
+  /*How to add in a background image*/
+  background-image: url("http://i.huffpost.com/gen/1716876/images/o-ATLANTA-TRAFFIC-facebook.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /*Makes my hero image stay still as I scroll; creates a cool effect*/
+  height: 500px;
+}
+
+.about {
+  background-color: #fff3e0;
+  font-size: 17px;
+
+  /*Adds space around the paragraph in my "About Me" section*/
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1.2%;
+  padding-right: 1.2%;
+}
+
+/*CSS for the white background surrounding my Coca-Cola image*/
+.whiteBackground {
+  background-color: white;
+  height: 600px;
+}
+
+/*My Coca Cola image*/
+#centerImage {
+  background-image: url('coca.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 550px;
+}
+
+button {
+  color: white !important;
+  background-color:#ff5252;
+  transition: 5s;
+}
+
+#firstButton{
+  /*sizes my button; avoid giving items "widths" in your code because it will contradict with materialize*/
+  height: 200px;
+  /*nicely spaces out my buttons from one another*/
+  margin-right: .5%;
+}
+
+#secondButton{
+  height: 200px;
+  margin-right: .5%;
+}
+
+#thirdButton{
+  height: 200px;
+  margin-right: .5%;
+}
+
+#fourthButton{
+  height: 200px;
+  margin-right: .5%;
+}
+
+#fifthButton{
+  /*Notice that I didn't give this button a margin; remember why?*/
+  height: 200px;
+}
+
+button:hover {
+  background-color:#ff80ab;
+}
+
+/*To hide the buttons that display underneath my carousel or slider images, make the buttons the same color as your background. Add "!important" to tell your code to override any code that conflicts with this decision*/
+li.indicator-item {
+background-color: lightblue !important;
+}
+
+/*CSS framing my entire form*/
+.formBackground {
+  background-color: #fff3e0;
+  height: 430px;
+}
+
+/*My spinning world. The image is a gif, embedded into the HTML. The code below helps my spinning world to appear on every rotating image and to stay center*/
+#world {
+  position: absolute;
+  z-index: 100;
+  padding-left: 40%;
+}
+
+/*This code also helps my spinning world to remain in the center of my page, even when on mobile*/
+@media only screen and (max-device-width: 736px){
+  #world {
+    padding-left:5%;
+  }
+
+}

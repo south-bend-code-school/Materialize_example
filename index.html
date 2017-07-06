@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website!!!</title>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Icons: Add this line of code for the icons that you find in materialize to work -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Stylesheets: All of your stylesheets are in this section  -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <!--marks the end of your stylesheets section-->
+
+  <!--Scripts: All of your jQuery is in this section -->
+    <!--This is the jQuery CDN. To find, Google "jQuery CDN and select the website entitle 'code.jquery' "  -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <!-- The JavaScript that you need from materialize. Can be found on the "Get Started" page on materialize -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+   <!--The link to the file that you'll code your jQuery on. This is just like your "style.css" file but for jQuery-->
+    <script src="main.js"></script>
+  <!--marks the end of your JavaScript section-->
+
+</head>
+
+<body>
+
+<!--Code for a NavBar-->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo" id="logo">Alex's Website</a>
+       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="badges.html">About Me</a></li>
+        <li><a href="collapsible.html">Favorite Shows</a></li>
+      </ul>
+<!--When your website is on a mobile device, the following lines of code compress your navbar in a clean way-->
+      <ul class="side-nav" id="mobile-demo">
+       <li><a href="sass.html">Home</a></li>
+       <li><a href="badges.html">About Me/a></li>
+       <li><a href="collapsible.html">Favorite Shows</a></li>
+       <li><a href="mobile.html">Mobile</a></li>
+     </ul>
+    </div>
+  </nav>
+
+<!--Hero Image: stretches across the full width of my page-->
+<div class="row">
+  <div id="header" class="col s12">
+  </div>
+</div>
+
+<div class="row">
+  <div class="about">
+<!--Lets me center align text. Search "Helpers" in Materialize to find different ways to align your text -->
+    <h2 id="aboutMeTitle" class="center-align">About Me</h2>
+    <p id="aboutMeParagraph" class="center-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In risus magna, lobortis quis justo eget, scelerisque pretium mauris. Nunc at volutpat urna. Integer a vestibulum dui. Phasellus varius facilisis sollicitudin. Maecenas molestie neque eget nisi lacinia, non congue nunc consequat. Nulla auctor lorem id sem mattis bibendum. Sed nulla ex, laoreet id dolor a, interdum viverra felis. Proin porttitor egestas tellus, et iaculis neque posuere nec. Duis faucibus lacus vel tellus faucibus, in pharetra nisl vestibulum. Phasellus euismod purus dolor, sit amet vulputate eros gravida sit amet. Suspendisse rhoncus accumsan eros vel posuere. Duis ut enim justo. Fusce ante dolor, semper ac ante non, semper posuere odio. Cras lobortis fermentum lacus, iaculis luctus leo.
+</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="whiteBackground col s12">
+    <div id="centerImage" class="col s8 offset-s2 responsive-img">
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <button id="firstButton" class="col s12 m2 offset-m1 waves-effect waves-light btn-large hide-on-small-only">button 1</button>
+    <!--if you don't want an image to display on certain size devices, include "hide-on-...-only". To find the different sized devices, search "hidden" in materialize -->
+
+
+  <button id="secondButton" class="col s12 m2 waves-effect waves-light btn-large">button 2</button>
+
+  <!-- Modal Trigger -->
+  <a href="#modal1">
+    <button id="thirdButton" class="col s12 m2 waves-effect waves-light btn-large">button 3
+    </button>
+  </a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In risus magna, lobortis quis justo eget, scelerisque pretium mauris. Nunc at volutpat urna. Integer a vestibulum dui. Phasellus varius facilisis sollicitudin. Maecenas molestie neque eget nisi lacinia, non congue nunc consequat. Nulla auctor lorem id sem mattis bibendum. Sed nulla ex, laoreet id dolor a, interdum viverra</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+  <button id="fourthButton" class="col s12 m2 waves-effect waves-light btn-large">button 4</button>
+
+  <button id="fifthButton" class="col s12 m2 waves-effect waves-light btn-large">button 5</button>
+
+</div>
+
+<!--Automated carousel-->
+<div class="slider">
+  <!--Rotating World gif  -->
+  <img id="world" src="world.webp">
+  <!--marks the end of rotating world gif-->
+    <ul class="slides">
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <div class="caption center-align">
+          <!-- <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <div class="caption left-align">
+          <!-- <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption right-align col s2 offset-s10">
+          <h3>Right Align</h3>
+          <!-- <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+        </div>
+      </li>
+    </ul>
+  </div>
+   <!-- marks the end of my Automated Carousel -->
+
+<!--A form-->
+<div class="row">
+<!--Frame the items in a class if you want a section of your page to have the same background aka "formBackground" for me!-->
+  <div class="formBackground">
+  <h4 class="left-align col s12">Write In:</h4>
+
+  <form class="col s12">
+        <div class="row">
+          <div class="input-field col s5">
+            <!--Lets you add in the correct icons (ex. this one is called "account_circle") Search "icons" in materialize to see a list of different icons to choose from-->
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">First Name</label>
+          </div>
+
+          <div class="input-field col s5 offset-s1">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">email</i>
+              <input id="icon_email" type="tel" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+
+          <div class="row">
+           <div class="input-field col s6">
+             <i class="material-icons prefix">vpn_key</i>
+             <input id="icon_vpn_key" type="password" class="validate">
+             <label for="password">Password</label>
+           </div>
+         </div>
+
+         <div class="row">
+           <div class="col s6 offset-s5">
+             <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+             <i class="material-icons right">done</i>
+            </button>
+          </div>
+      </div>
+
+  </div>
+</div>
+
+
+</body>
+
+
+</html>
